@@ -259,7 +259,7 @@ void click(){
               FormData formData = FormData.fromMap({
                                                   "swing": temp,
                                                   "code": code,});
-                                                Response response = await Dio().post("http://52.28.151.44:5000/upload", data: formData);
+                                                Response response = await Dio().post("http://54.176.62.161:5000/upload", data: formData);
                                                 return response.data['id'];},
           ),
         ],
