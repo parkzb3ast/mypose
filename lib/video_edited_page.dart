@@ -44,7 +44,7 @@ final TextEditingController _textcontroller = TextEditingController();
                                                 FormData formData = FormData.fromMap({
                                                   "file": await MultipartFile.fromFile(widget.videoPath, filename:fileName),
                                                   "code": code,});
-                                                Response response = await Dio().post("http://52.28.151.44:5000/upload", data: formData);
+                                                Response response = await Dio().post("http://54.176.62.161:5000/upload", data: formData);
                                                 return response.data['id'];},
           ),
         ],
